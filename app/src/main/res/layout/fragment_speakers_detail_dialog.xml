@@ -1,13 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.SpeakersDetailDialogFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivDetailSpeaker"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speaker Name"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job Tittle"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WorkPlace"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_margin="10dp" />
+
+                    <ImageView
+                        android:id="@+id/ivDetailSpeakerAccount"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_icons_twitter"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerBiography"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem Ipsum"
+                        android:gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_margin="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </ScrollView>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

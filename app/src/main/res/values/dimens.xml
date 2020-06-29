@@ -7,5 +7,6 @@
     <dimen name="tamañoTitulo">20sp</dimen>
     <dimen name="tamañoSubtitle">15sp</dimen>
     <dimen name="marginHomeSubtitulo">10dp</dimen>
-
+    <dimen name="itemScheduleTitulo">30sp</dimen>
+    <dimen name="ItemScheduleSubtitle">20sp</dimen>
 </resources>
