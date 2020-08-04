@@ -11,7 +11,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarConference"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+            android:layout_height="wrap_content" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
@@ -97,7 +97,7 @@
                     android:layout_centerInParent="true"
                     android:layout_margin="5dp"
                     android:gravity="center_horizontal"
-                    android:text="design"
+                    android:text="Tag"
                     android:textColor="@color/colorPrimary"
                     android:textSize="12sp" />
 
