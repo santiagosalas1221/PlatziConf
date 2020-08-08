@@ -10,7 +10,7 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -29,12 +29,12 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/altoImageViewHome"
-                    android:src="@drawable/banner_platzi_conf"></ImageView>
+                    android:src="@drawable/banner_platzi_conf" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="@color/colorPrimary"></View>
+                    android:background="@color/colorPrimary" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_marginRight="@dimen/marginHomeSubtitulo"
                     android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo" />
             </LinearLayout>
 
             <LinearLayout
@@ -74,17 +74,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@color/colorPrimary"
-                    android:layout_marginTop="10dp"></View>
+                    android:layout_marginTop="10dp" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/altoImageViewHome"
-                    android:src="@drawable/platzi_conf_2"></ImageView>
+                    android:src="@drawable/platzi_conf_2" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="@color/colorPrimary"></View>
+                    android:background="@color/colorPrimary" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -95,13 +95,13 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_marginRight="@dimen/marginHomeSubtitulo"
                     android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:background="@color/colorPrimary"
-                    android:layout_marginTop="10dp"></View>
+                    android:layout_marginTop="10dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_marginRight="@dimen/marginHomeSubtitulo"
                     android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
