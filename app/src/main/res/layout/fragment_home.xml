@@ -18,22 +18,23 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/carCornerRadius"
                 android:layout_margin="15dp"
-                app:cardElevation="3dp">
+                app:cardElevation="3dp" />
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_parrafo">
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/banner_platzi_conf">
-                    </ImageView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/colorPrimary">
-                    </View>
+                    android:layout_height="@dimen/altoImageViewHome"
+                    android:src="@drawable/banner_platzi_conf"></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"></View>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -51,61 +52,67 @@
                         android:background="@color/colorPrimary"
                         android:layout_marginTop="10dp">
                     </View>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_que_es_resp"
-                        android:textSize="@dimen/tamañoSubtitle"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:layout_marginRight="@dimen/marginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo">
-                    </TextView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="10dp">
-                    </View>
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/platzi_conf_2">
-                    </ImageView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/colorPrimary">
-                    </View>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_por_que"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/tamañoTitulo"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:layout_marginRight="@dimen/marginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo">
-                    </TextView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="10dp">
-                    </View>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/inicio_frag_tv_por_que_resp"
-                        android:textSize="@dimen/tamañoSubtitle"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:layout_marginRight="@dimen/marginHomeSubtitulo"
-                        android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo">
-                    </TextView>
-                </LinearLayout>
-        </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio_frag_tv_que_es_resp"
+                    android:textSize="@dimen/tamañoSubtitle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginRight="@dimen/marginHomeSubtitulo"
+                    android:layout_marginLeft="@dimen/marginHomeSubtitulo"
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shape_parrafo">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"></View>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altoImageViewHome"
+                    android:src="@drawable/platzi_conf_2"></ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio_frag_tv_por_que"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamañoTitulo"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginRight="@dimen/marginHomeSubtitulo"
+                    android:layout_marginLeft="@dimen/marginHomeSubtitulo"
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inicio_frag_tv_por_que_resp"
+                    android:textSize="@dimen/tamañoSubtitle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginRight="@dimen/marginHomeSubtitulo"
+                    android:layout_marginLeft="@dimen/marginHomeSubtitulo"
+                    android:layout_marginTop="@dimen/marginHomeSubtitulo"></TextView>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

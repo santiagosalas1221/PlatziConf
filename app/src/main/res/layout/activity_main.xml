@@ -17,7 +17,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/toolBarAlto"
-                android:src="@drawable/logo_platzi_conf"></ImageView>
+                android:src="@drawable/logo_platzi_conf" />
         </Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
