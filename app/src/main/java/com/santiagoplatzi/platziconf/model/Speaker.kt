@@ -1,9 +1,11 @@
 package com.santiagoplatzi.platziconf.model
 
 class Speaker {
-    var name = String
-    var jobtitle = String
-    var workplace = String
-    var twitter = String
-    var image = String
+    var name = ""
+    var jobtitle = ""
+    var workplace = ""
+    var biography = ""
+    var twitter = ""
+    var image = ""
+    var category = 0
 }
