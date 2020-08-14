@@ -15,7 +15,7 @@ class SpeakersViewModel() {
     }
 
     fun getSpeakerFromFirebase() {
-        firestoreService.getSchedule(object : Callback<List<Speaker>> {
+        firestoreService.getSpeakers(object : Callback<List<Speaker>> {
             override fun onSuccess(result: List<Speaker>?) {
                 listSchedule.postValue(result)
                 processFinished()

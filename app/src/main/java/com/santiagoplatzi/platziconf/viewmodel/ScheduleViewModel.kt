@@ -15,8 +15,9 @@ class ScheduleViewModel {
     }
 
     fun getScheduleFromFirebase() {
-        firestoreService.getSchedule(object : Callback<List<Conference>> {
-            override fun onSuccess(result: List<Conference>?) {
+        firestoreService.getSchedule(object :
+            Callback<List<com.santiagoplatzi.platziconf.model.Conference>> {
+            override fun onSuccess(result: List<com.santiagoplatzi.platziconf.model.Conference>?) {
                 listSchedule.postValue(result)
                 processFinished()
             }
@@ -30,4 +31,7 @@ class ScheduleViewModel {
     fun processFinished() {
         isLoading.value = true
     }
+}
+
+private fun <T> MutableLiveData<T>.postValue(resultado: List<com.santiagoplatzi.platziconf.model.Conference>?) {
 }
