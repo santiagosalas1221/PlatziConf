@@ -1,7 +1,7 @@
-package com.santiagoplatzi.platziconf.ui.activities
+package com.santiagoplatzi.platziconf.view.ui.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.santiagoplatzi.platziconf.R
 
 class SplashscreenActivity : AppCompatActivity() {

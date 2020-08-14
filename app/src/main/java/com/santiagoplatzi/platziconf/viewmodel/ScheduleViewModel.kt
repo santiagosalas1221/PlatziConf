@@ -1,7 +1,7 @@
 package com.santiagoplatzi.platziconf.viewmodel
 
-import android.telecom.Conference
 import androidx.lifecycle.MutableLiveData
+import com.santiagoplatzi.platziconf.model.Conference
 import com.santiagoplatzi.platziconf.network.Callback
 import com.santiagoplatzi.platziconf.network.FirestoreService
 
@@ -31,7 +31,4 @@ class ScheduleViewModel {
     fun processFinished() {
         isLoading.value = true
     }
-}
-
-private fun <T> MutableLiveData<T>.postValue(resultado: List<com.santiagoplatzi.platziconf.model.Conference>?) {
 }
