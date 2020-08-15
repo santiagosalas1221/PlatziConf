@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.santiagoplatzi.platziconf.R
 import com.santiagoplatzi.platziconf.model.Conference
+import com.santiagoplatzi.platziconf.view.ui.fragments.ScheduleFragment
 import java.util.*
 
-class ScheduleAdapter(val scheduleListener: ScheduleListener) :
+class ScheduleAdapter(val scheduleListener: ScheduleFragment) :
     RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {
 
     var listConference = ArrayList<Conference>()
