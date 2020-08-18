@@ -3,6 +3,6 @@ package com.santiagoplatzi.platziconf.view.adapter
 import com.santiagoplatzi.platziconf.model.Speaker
 
 
-class SpeakerListener {
+interface SpeakerListener {
     fun onSpeakerClick(speaker: Speaker, position: Int) {}
 }

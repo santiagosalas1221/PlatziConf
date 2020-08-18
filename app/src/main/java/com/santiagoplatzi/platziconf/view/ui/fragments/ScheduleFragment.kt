@@ -49,7 +49,7 @@ class ScheduleFragment : Fragment(), ScheduleListener {
     fun observeViewModel() {
         viewModel.listSchedule.observe(
             viewLifecycleOwner,
-            Observer<List<com.santiagoplatzi.platziconf.model.Conference>> { schedule ->
+            Observer<List<Conference>> { schedule ->
                 scheduleAdapter.updateData(schedule)
             })
         viewModel.isLoading.observe(viewLifecycleOwner, Observer<Boolean> {
