@@ -11,7 +11,7 @@ import com.santiagoplatzi.platziconf.model.Conference
 import com.santiagoplatzi.platziconf.view.ui.fragments.ScheduleFragment
 import java.util.*
 
-class ScheduleAdapter(val scheduleListener: ScheduleFragment) :
+class ScheduleAdapter(private val scheduleListener: ScheduleFragment) :
     RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {
 
     var listConference = ArrayList<Conference>()
@@ -43,7 +43,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleFragment) :
             simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
 
         holder.itemView.setOnClickListener {
-            scheduleListener.onConferenceClicked(conference, position)
+            scheduleListener.onConferenceClick(conference, position)
         }
     }
 

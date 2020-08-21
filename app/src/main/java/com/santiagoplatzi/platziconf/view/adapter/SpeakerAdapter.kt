@@ -10,9 +10,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.santiagoplatzi.platziconf.R
 import com.santiagoplatzi.platziconf.model.Speaker
+import com.santiagoplatzi.platziconf.view.ui.fragments.SpeakersFragment
 import java.util.*
 
-class SpeakerAdapter(val speakerListener: SpeakerListener) :
+class SpeakerAdapter(private val speakerListener: SpeakersFragment) :
     RecyclerView.Adapter<SpeakerAdapter.ViewHolder>() {
 
     var listSpeaker = ArrayList<Speaker>()
